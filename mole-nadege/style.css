@@ -1,0 +1,106 @@
+/*
+============
+BLOCS 
+============
+*/
+
+h2 {
+    color: var(--clr-Secondary-300);
+    font-size: var(--fs-600);
+    margin: 2rem;
+}
+
+.cercle {
+    height: 150px;
+    width: 150px;
+    background-color: var(--clr-Primary-100);
+    border-radius: 50%;
+    border-color: black;
+}
+
+.score {
+    width: 200px;
+    height: 100px;
+    background-color: var(--clr-Neutral-100);
+    margin: 2rem;
+    border-radius: 50px;
+}
+
+.redCircle {
+    background-color: var(--clr-Secondary-300);
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    color: var(--clr-Primary-500);
+}
+
+/* 
+============
+COMPOSITION 
+============
+*/
+
+.displayBlock {
+    display: block;
+}
+
+/* +Flexbox+ */
+.displayFlex {
+    display: flex;
+}
+
+.gap {
+    gap: .5rem;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.justifyStart {
+    justify-content: flex-start;
+}
+
+.justifyEnd {
+    justify-content: flex-end;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.justifyEvenly {
+    justify-content: space-evenly;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.alignStart {
+    align-items: flex-start;
+}
+
+.alignEnd {
+    align-items: flex-end;
+}
+
+.alignSelfEnd {
+    align-self: end;
+}
+
+.alignSelfStart {
+    align-self: start;
+}

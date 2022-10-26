@@ -102,30 +102,27 @@
 // sa couleur change
 //
 
-const shuffleDivs = () => 
-	shuffle(	)
 
-
-
-// ex
 (() => {
-  // shuffle array of div.latest-sales
-  const shuffleDivs = () => 
-    shuffle(Array.from(document.querySelectorAll("div.latest-sales")));
-  // hide the active element
-  const hideActive = el => 
-    el && el.classList.remove("active");
-  // hide active element and activate [el]
-  const showMessage = el => {
+// shuffle array of div.latest-sales
+const shuffleDivs = () => 
+	shuffle(Array.from(document.querySelectorAll("div.circle")))
+// hide the active element
+  const hideActive = el => {
+  el && el.classList.remove("active")
+}
+// hide active element and activate [el]
+const showMessage = el => {
     hideActive(document.querySelector(".active"));
     el.classList.add("active");
-  };
-  // initialize
+  }
+ // initialize
   let divsShuffled = shuffleDivs();
   let current = 0;
+
   
-  // start showing a random div.latest-sales
-  // every 5 seconds.
+// start showing a random div.circle
+// every 5 seconds.
   showRandomMessage();
 
   function showRandomMessage() {
@@ -139,7 +136,7 @@ const shuffleDivs = () =>
     }
 
     // show next div after 5 seconds
-    setTimeout(showRandomMessage, 5000);
+    setTimeout(showRandomMessage, 1000);
   }
 
   function shuffle(array) {
@@ -147,21 +144,25 @@ const shuffleDivs = () =>
     while (i--) {
       const ri = Math.floor(Math.random() * (i + 1));
       [array[i], array[ri]] = [array[ri], array[i]];
+
     }
     return array;
+
   }
 })();
 
 
+// lorsquon clique sur active 
+// const active = document.querySelector(".active")
+// console.log(active)
+// active.addEventListener("click", function() {
+//   const p = document.querySelector("p")
 
-
-
-
-
-
-
-
-
-
-
-
+//   const calcscore = 1
+//   const calcfinal = 0
+//   while (calcfinal < 10) {
+//     let calcfinal = calcscore + calcscore
+//     calcfinal++
+//     p.innerText = "score : " + calcfinal
+//   }
+// });

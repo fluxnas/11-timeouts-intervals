@@ -9,7 +9,7 @@
     border-color: black;
 }
 
-.circle-active{
+.circle.active{
     margin:10px;
     width:100px;
     background:red;
